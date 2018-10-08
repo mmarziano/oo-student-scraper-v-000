@@ -34,10 +34,10 @@ class Scraper
 
       vitals_info.each do |card|
                 #binding.pry
-           case card
-           when card.include?('twitter')
+           
+           if card.include?('twitter')
             student_details[:twitter] = card 
-           when card.include?('linkedin')
+           else card.include?('linkedin')
              student_details[:linkedin] = card 
            when card.include?('github')
              student_details[:github] = card 
