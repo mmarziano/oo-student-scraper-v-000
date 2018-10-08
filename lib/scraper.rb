@@ -37,9 +37,9 @@ class Scraper
            
            if card.include?('twitter')
             student_details[:twitter] = card 
-           else card.include?('linkedin')
+           elsif card.include?('linkedin')
              student_details[:linkedin] = card 
-           when card.include?('github')
+           elsif card.include?('github')
              student_details[:github] = card 
            else
              student_details[:blog] = card  
