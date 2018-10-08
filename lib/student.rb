@@ -2,6 +2,9 @@ class Student
 
   attr_accessor :name, :location, :twitter, :linkedin, :github, :blog, :profile_quote, :bio, :profile_url 
 
+  index_url = "./fixtures/student-site/index.html"
+  profile_url = ".fixtures/student-site/students"
+  
   @@all = []
 
   def initialize(student_hash)
